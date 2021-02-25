@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- WHY DOESNT ANYTHING WORK-->
+<html>
+	<head>
+    <title>WIN95</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/taskbar.css">
+    <link rel="shortcut icon" href="icons/start.png" />
+    <desktopText>This Computer</desktopText>
+		<desktopText2>IST_Assignment<br>_Important.txt</desktopText2>
+  </head>
+
+
+
+
+<!-- Icons -->
+  <div id ="win_icons">
+    <!-- Mycomputer Icon -->
+      <div id="this_computer">
+        <img style="position:absolute; top:12px; left:40px; width:45px; height:45px" src="icons/this_computer.png">
+      </div>
+			<div id="reflection_assignment">
+				<img style="position:absolute; top:96px; left:43px; width:40px; height:40px" src="icons/text_icon.png">
+			</div>
+
+
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+			<script type="text/javascript">
+			$(function(){
+			    $('#button').click(function(){
+			        if(!$('#iframe').length) {
+			                $('#iframeHolder').html('<iframe id="scaled-frame" src="text.html" width="600" height="350"></iframe>');
+			        }
+			    });
+			});
+			</script>
+
+
+			<button style="color: transparent; background-color: transparent; border-color: transparent; cursor: default; position:absolute; top:105px; left:35px;" id="button">Button</button>
+			<div id="iframeHolder" style="position:absolute; top:200px; left:350px;"></div>
+<!--
+			<div id="wrap">
+  		<iframe id="scaled-frame" src="/tool/"></iframe>
+			</div>
+-->
+  </div>
+
+<!-- Taskbar -->
+<div id="win_taskbar">
+		<!-- Start Button -->
+		<div id="win_start_button">
+			<img src="icons/start.png" id="win_start_icon" alt="Windows Logo">
+			<span id="win_start_text">Start</span>
+		</div>
+		</div>
+	</div>
